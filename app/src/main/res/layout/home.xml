@@ -1,0 +1,577 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/homee">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="70dp"
+            android:text="What would you like to order?"
+            android:textColor="#FFAD01"
+            android:textSize="35dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="370dp"
+            android:layout_marginTop="25dp"
+            android:onClick="onClickProfile"
+            android:background="@drawable/profile" />
+
+        <ImageView
+            android:id="@+id/textmostpopular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/textmost" />
+
+        <RelativeLayout
+            android:id="@+id/menu_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textmostpopular">
+
+            <ImageView
+                android:id="@+id/menu1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/burgerextrabeef" />
+
+            <ImageButton
+                android:id="@+id/Min_Menu1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="119dp"
+                android:layout_marginTop="228dp"
+                android:background="@drawable/btn_min"
+                android:onClick="onClick_MinMenu_1" />
+
+            <TextView
+                android:id="@+id/jumlah_menu1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="125dp"
+                android:layout_marginRight="250dp"
+                android:layout_marginTop="228dp"
+                android:text="0"
+                android:gravity="center"
+                android:textSize="10dp" />
+
+            <ImageButton
+                android:id="@+id/Add_Menu1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="228dp"
+                android:background="@drawable/btn_add"
+                android:onClick="onClick_AddMenu_1" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/menu_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textmostpopular"
+            android:layout_marginLeft="200dp">
+
+            <ImageView
+                android:id="@+id/menu2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/burgerandfriesmeal" />
+
+            <ImageButton
+                android:id="@+id/Min_Menu2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="119dp"
+                android:layout_marginTop="228dp"
+                android:background="@drawable/btn_min"
+                android:onClick="onClick_MinMenu_2" />
+
+            <TextView
+                android:id="@+id/jumlah_menu2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="130dp"
+                android:layout_marginRight="60dp"
+                android:layout_marginTop="228dp"
+                android:text="0"
+                android:gravity="center"
+                android:textSize="10dp" />
+
+            <ImageButton
+                android:id="@+id/Add_Menu2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="228dp"
+                android:background="@drawable/btn_add"
+                android:onClick="onClick_AddMenu_2" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/menu_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/menu_1">
+
+            <ImageView
+                android:id="@+id/menu3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/kebaboriginal" />
+            <ImageButton
+                android:id="@+id/Min_Menu3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="119dp"
+                android:layout_marginTop="212dp"
+                android:background="@drawable/btn_min"
+                android:onClick="onClick_MinMenu_3" />
+
+            <TextView
+                android:id="@+id/jumlah_menu3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="125dp"
+                android:layout_marginTop="212dp"
+                android:layout_marginRight="250dp"
+                android:gravity="center"
+                android:text="0"
+                android:textSize="10dp" />
+
+            <ImageButton
+                android:id="@+id/Add_Menu3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="212dp"
+                android:background="@drawable/btn_add"
+                android:onClick="onClick_AddMenu_3" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/menu_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/menu_2"
+            android:layout_marginLeft="200dp">
+
+            <ImageView
+                android:id="@+id/menu4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/kebabextrameat" />
+
+
+            <ImageButton
+                android:id="@+id/Min_Menu4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="119dp"
+                android:layout_marginTop="212dp"
+                android:background="@drawable/btn_min"
+                android:onClick="onClick_MinMenu_4" />
+
+            <TextView
+                android:id="@+id/jumlah_menu4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="130dp"
+                android:layout_marginTop="212dp"
+                android:layout_marginRight="60dp"
+                android:gravity="center"
+                android:text="0"
+                android:textSize="10dp" />
+
+            <ImageButton
+                android:id="@+id/Add_Menu4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="212dp"
+                android:background="@drawable/btn_add"
+                android:onClick="onClick_AddMenu_4" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/othermenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/menu_3"
+            android:layout_marginLeft="50dp"
+            android:background="@drawable/othermenu" />
+
+        <RelativeLayout
+            android:id="@+id/menu_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/othermenu">
+
+            <ImageView
+                android:id="@+id/menu5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/miniburger" />
+            <ImageButton
+                android:id="@+id/Min_Menu5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="119dp"
+                android:layout_marginTop="212dp"
+                android:background="@drawable/btn_min"
+                android:onClick="onClick_MinMenu_5" />
+
+            <TextView
+                android:id="@+id/jumlah_menu5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="125dp"
+                android:layout_marginTop="212dp"
+                android:layout_marginRight="250dp"
+                android:gravity="center"
+                android:text="0"
+                android:textSize="10dp" />
+
+            <ImageButton
+                android:id="@+id/Add_Menu5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="212dp"
+                android:background="@drawable/btn_add"
+                android:onClick="onClick_AddMenu_5" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/menu_6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/othermenu"
+            android:layout_marginLeft="200dp">
+
+            <ImageView
+                android:id="@+id/menu6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/kebabpotatoes" />
+
+
+            <ImageButton
+                android:id="@+id/Min_Menu6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="119dp"
+                android:layout_marginTop="212dp"
+                android:background="@drawable/btn_min"
+                android:onClick="onClick_MinMenu_6" />
+
+            <TextView
+                android:id="@+id/jumlah_menu6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="130dp"
+                android:layout_marginTop="212dp"
+                android:layout_marginRight="60dp"
+                android:gravity="center"
+                android:text="0"
+                android:textSize="10dp" />
+
+            <ImageButton
+                android:id="@+id/Add_Menu6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="212dp"
+                android:background="@drawable/btn_add"
+                android:onClick="onClick_AddMenu_6" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/menu_7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/menu_5">
+
+            <ImageView
+                android:id="@+id/menu7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/triplemeatburger" />
+            <ImageButton
+                android:id="@+id/Min_Menu7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="119dp"
+                android:layout_marginTop="212dp"
+                android:background="@drawable/btn_min"
+                android:onClick="onClick_MinMenu_7" />
+
+            <TextView
+                android:id="@+id/jumlah_menu7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="125dp"
+                android:layout_marginTop="212dp"
+                android:layout_marginRight="250dp"
+                android:gravity="center"
+                android:text="0"
+                android:textSize="10dp" />
+
+            <ImageButton
+                android:id="@+id/Add_Menu7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="212dp"
+                android:background="@drawable/btn_add"
+                android:onClick="onClick_AddMenu_7" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/menu_8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/menu_6"
+            android:layout_marginLeft="200dp">
+
+            <ImageView
+                android:id="@+id/menu8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/burgerextrameat" />
+
+            <ImageButton
+                android:id="@+id/Min_Menu8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="119dp"
+                android:layout_marginTop="212dp"
+                android:background="@drawable/btn_min"
+                android:onClick="onClick_MinMenu_8" />
+
+            <TextView
+                android:id="@+id/jumlah_menu8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="130dp"
+                android:layout_marginTop="212dp"
+                android:layout_marginRight="60dp"
+                android:gravity="center"
+                android:text="0"
+                android:textSize="10dp" />
+
+            <ImageButton
+                android:id="@+id/Add_Menu8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="212dp"
+                android:background="@drawable/btn_add"
+                android:onClick="onClick_AddMenu_8" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/menu_9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/menu_7">
+
+            <ImageView
+                android:id="@+id/menu9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/meetloverskebab" />
+            <ImageButton
+                android:id="@+id/Min_Menu9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="119dp"
+                android:layout_marginTop="212dp"
+                android:background="@drawable/btn_min"
+                android:onClick="onClick_MinMenu_9" />
+
+            <TextView
+                android:id="@+id/jumlah_menu9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="125dp"
+                android:layout_marginTop="212dp"
+                android:layout_marginRight="250dp"
+                android:gravity="center"
+                android:text="0"
+                android:textSize="10dp" />
+
+            <ImageButton
+                android:id="@+id/Add_Menu9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="212dp"
+                android:background="@drawable/btn_add"
+                android:onClick="onClick_AddMenu_9" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/menu_10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/menu_8"
+            android:layout_marginLeft="200dp">
+
+            <ImageView
+                android:id="@+id/menu10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/burgerblackpatties" />
+
+            <ImageButton
+                android:id="@+id/Min_Menu10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="119dp"
+                android:layout_marginTop="212dp"
+                android:background="@drawable/btn_min"
+                android:onClick="onClick_MinMenu_10" />
+
+            <TextView
+                android:id="@+id/jumlah_menu10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="130dp"
+                android:layout_marginTop="212dp"
+                android:layout_marginRight="60dp"
+                android:gravity="center"
+                android:text="0"
+                android:textSize="10dp" />
+
+            <ImageButton
+                android:id="@+id/Add_Menu10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="212dp"
+                android:background="@drawable/btn_add"
+                android:onClick="onClick_AddMenu_10" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/menu_11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/menu_9">
+
+            <ImageView
+                android:id="@+id/menu11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/freshburger" />
+            <ImageButton
+                android:id="@+id/Min_Menu11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="119dp"
+                android:layout_marginTop="212dp"
+                android:background="@drawable/btn_min"
+                android:onClick="onClick_MinMenu_11" />
+
+            <TextView
+                android:id="@+id/jumlah_menu11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="125dp"
+                android:layout_marginTop="212dp"
+                android:layout_marginRight="250dp"
+                android:gravity="center"
+                android:text="0"
+                android:textSize="10dp" />
+
+            <ImageButton
+                android:id="@+id/Add_Menu11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="212dp"
+                android:background="@drawable/btn_add"
+                android:onClick="onClick_AddMenu_11" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/menu_12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/menu_10"
+            android:layout_marginLeft="200dp">
+
+            <ImageView
+                android:id="@+id/menu12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/burgerset" />
+
+            <ImageButton
+                android:id="@+id/Min_Menu12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="119dp"
+                android:layout_marginTop="212dp"
+                android:background="@drawable/btn_min"
+                android:onClick="onClick_MinMenu_12" />
+
+            <TextView
+                android:id="@+id/jumlah_menu12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="130dp"
+                android:layout_marginTop="212dp"
+                android:layout_marginRight="60dp"
+                android:gravity="center"
+                android:text="0"
+                android:textSize="10dp" />
+
+            <ImageButton
+                android:id="@+id/Add_Menu12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="212dp"
+                android:background="@drawable/btn_add"
+                android:onClick="onClick_AddMenu_12" />
+        </RelativeLayout>
+
+        <ImageButton
+            android:id="@+id/btnCheckOut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/menu_12"
+            android:layout_marginLeft="25dp"
+            android:background="@drawable/check_out"
+            android:onClick="onClickBtnCheckOut" />
+
+
+
+
+
+
+
+    </RelativeLayout>
+</ScrollView>

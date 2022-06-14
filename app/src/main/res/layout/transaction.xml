@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/transaction">
+
+    <ImageButton
+        android:id="@+id/btn_back"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:onClick="onClickBtn_Back"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/back" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:gravity="center"
+        android:text="Transaction"
+        android:textColor="#FFFFFF"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/deliverylocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Delivery Location : "
+        android:textColor="#FFAD01"
+        android:textSize="17dp" />
+
+    <EditText
+        android:id="@+id/etLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/deliverylocation"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="45dp"
+        android:background="@drawable/custom"
+        android:inputType="text"
+        android:textColor="@color/white"
+        android:padding="10dp" />
+
+    <RelativeLayout
+        android:id="@+id/boxtransaction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="220dp">
+
+        <ImageView
+            android:id="@+id/box_transaction"
+            android:layout_width="match_parent"
+            android:layout_height="473dp"
+            android:background="@drawable/box_transaction" />
+
+        <ImageView
+            android:id="@+id/paymentsummary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="45dp"
+            android:background="@drawable/payment" />
+
+        <TextView
+            android:id="@+id/tvPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/paymentsummary"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="40dp"
+            android:text="Price  "
+            android:textColor="#FFFFFF"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvDeliveryfee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvPrice"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"
+            android:text="Delivery Fee "
+            android:textColor="#FFFFFF"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvDeliveryfee"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="45dp"
+            android:background="@drawable/line" />
+
+        <TextView
+            android:id="@+id/tvTotalPayment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/line"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="40dp"
+            android:text="Total Payment"
+            android:textColor="#FFFFFF"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/orderandpickup"
+        android:layout_width="271dp"
+        android:layout_height="77dp"
+        android:layout_below="@id/boxtransaction"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/order"
+        android:onClick="onClickBtn_OP" />
+
+
+</RelativeLayout>
