@@ -26,8 +26,8 @@ public interface ApiInterface {
             @Field("username") String username,
             @Field("password") String password,
             @Field("email") String email,
-            @Field("nohp") String nohp,
-            @Field("namalengkap") String namalengkap
+            @Field("no_hp") String nohp,
+            @Field("nama_lengkap") String namalengkap
     );
     @FormUrlEncoded
     @POST("transaction.php")

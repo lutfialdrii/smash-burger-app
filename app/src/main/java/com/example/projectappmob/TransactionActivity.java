@@ -19,7 +19,7 @@ import retrofit2.Callback;
 import retrofit2.Response;
 
 public class TransactionActivity extends AppCompatActivity implements View.OnClickListener {
-    TextView tvPrice, tvPayment, tvId;
+    TextView tvPrice, tvPayment;
     ImageButton btnBack, btnOrder;
     EditText etLocation;
     ApiInterface apiInterface;
@@ -35,7 +35,6 @@ public class TransactionActivity extends AppCompatActivity implements View.OnCli
 
         tvPrice = findViewById(R.id.tvPrice);
         tvPayment = findViewById(R.id.tvTotalPayment);
-        tvId = findViewById(R.id.tvId);
 
         btnBack = findViewById(R.id.btn_back);
         btnBack.setOnClickListener(this);

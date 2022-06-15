@@ -5,13 +5,13 @@ import com.google.gson.annotations.SerializedName;
 public class LoginData {
 
 	@SerializedName("no_hp")
-	private int noHp;
+	private String noHp;
 
 	@SerializedName("nama_lengkap")
 	private String namaLengkap;
 
 	@SerializedName("id_user")
-	private int idUser;
+	private String idUser;
 
 	@SerializedName("email")
 	private String email;
@@ -19,11 +19,11 @@ public class LoginData {
 	@SerializedName("username")
 	private String username;
 
-	public void setNoHp(int noHp){
+	public void setNoHp(String noHp){
 		this.noHp = noHp;
 	}
 
-	public int getNoHp(){
+	public String getNoHp(){
 		return noHp;
 	}
 
@@ -35,11 +35,11 @@ public class LoginData {
 		return namaLengkap;
 	}
 
-	public void setIdUser(int idUser){
+	public void setIdUser(String idUser){
 		this.idUser = idUser;
 	}
 
-	public int getIdUser(){
+	public String getIdUser(){
 		return idUser;
 	}
 

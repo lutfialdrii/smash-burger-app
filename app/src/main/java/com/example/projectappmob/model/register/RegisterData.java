@@ -4,11 +4,11 @@ import com.google.gson.annotations.SerializedName;
 
 public class RegisterData {
 
-	@SerializedName("namalengkap")
-	private String namalengkap;
+	@SerializedName("no_hp")
+	private String noHp;
 
-	@SerializedName("nohp")
-	private String nohp;
+	@SerializedName("nama_lengkap")
+	private String namaLengkap;
 
 	@SerializedName("email")
 	private String email;
@@ -16,20 +16,20 @@ public class RegisterData {
 	@SerializedName("username")
 	private String username;
 
-	public void setNamalengkap(String namalengkap){
-		this.namalengkap = namalengkap;
+	public void setNoHp(String noHp){
+		this.noHp = noHp;
 	}
 
-	public String getNamalengkap(){
-		return namalengkap;
+	public String getNoHp(){
+		return noHp;
 	}
 
-	public void setNohp(String nohp){
-		this.nohp = nohp;
+	public void setNamaLengkap(String namaLengkap){
+		this.namaLengkap = namaLengkap;
 	}
 
-	public String getNohp(){
-		return nohp;
+	public String getNamaLengkap(){
+		return namaLengkap;
 	}
 
 	public void setEmail(String email){
