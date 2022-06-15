@@ -17,7 +17,7 @@ public class SessionManager {
     public static final String IS_LOGGED_IN = "isLoggedIn";
     public static final String ID_USER = "id_user";
     public static final String USERNAME = "username";
-    public static final String NAMA_LENGKAP = "nama_lengkap";
+    public static final String NAMALENGKAP = "nama_lengkap";
     public static final String EMAIL = "email";
     public static final String NOHP = "no_hp";
 
@@ -29,11 +29,11 @@ public class SessionManager {
 
     public void createLoginSession(LoginData user){
         editor.putBoolean(IS_LOGGED_IN, true);
-        editor.putInt(ID_USER, user.getIdUser());
+        editor.putInt(ID_USER, Integer.parseInt(user.getIdUser()));
         editor.putString(USERNAME, user.getUsername());
-        editor.putString(NAMA_LENGKAP, user.getNamaLengkap());
+        editor.putString(NAMALENGKAP, user.getNamaLengkap());
         editor.putString(EMAIL, user.getEmail());
-        editor.putInt(NOHP, user.getNoHp());
+        editor.putInt(NOHP, Integer.parseInt(user.getNoHp()));
         editor.commit();
     }
 
@@ -41,7 +41,7 @@ public class SessionManager {
         HashMap<String,String> user = new HashMap<>();
         user.put(ID_USER, String.valueOf(sharedPreferences.getInt(ID_USER, 0)));
         user.put(USERNAME, sharedPreferences.getString(USERNAME,null));
-        user.put(NAMA_LENGKAP, sharedPreferences.getString(NAMA_LENGKAP,null));
+        user.put(NAMALENGKAP, sharedPreferences.getString(NAMALENGKAP,null));
         user.put(EMAIL, sharedPreferences.getString(EMAIL, null));
         user.put(NOHP, String.valueOf(sharedPreferences.getInt(NOHP, 0)));
         return user;

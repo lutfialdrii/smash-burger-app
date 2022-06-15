@@ -33,7 +33,7 @@ public class ProfileActivity extends AppCompatActivity implements View.OnClickLi
 
         String username = "Username : " + sessionManager.getUserDetail().get(SessionManager.USERNAME);
         String id_user = "ID_USER " + sessionManager.getUserDetail().get(SessionManager.ID_USER);
-        String namalengkap = ""+sessionManager.getUserDetail().get(SessionManager.NAMA_LENGKAP);
+        String namalengkap = ""+sessionManager.getUserDetail().get(SessionManager.NAMALENGKAP);
         String nohp = "No Hp : " + sessionManager.getUserDetail().get(SessionManager.NOHP);
         String email = "Email : " + sessionManager.getUserDetail().get(SessionManager.EMAIL);
 
