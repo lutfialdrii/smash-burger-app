@@ -24,12 +24,10 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
     TextView tvSignIn;
     ApiInterface apiInterface;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
-
         etUsername = findViewById(R.id.etUsername);
         etPassword = findViewById(R.id.etPassword);
         etEmail = findViewById(R.id.etEmail);

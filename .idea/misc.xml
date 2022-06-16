@@ -10,11 +10,15 @@
         <entry key="..\:/Games/Burger/app/src/main/res/layout/card_item.xml" value="0.20416666666666666" />
         <entry key="app/src/main/res/layout/activity_history.xml" value="0.32708333333333334" />
         <entry key="app/src/main/res/layout/activity_intro_apps.xml" value="0.32708333333333334" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.23733938019652306" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.32708333333333334" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_profile.xml" value="0.32708333333333334" />
+        <entry key="app/src/main/res/layout/activity_register.xml" value="0.32708333333333334" />
         <entry key="app/src/main/res/layout/activity_transaction.xml" value="0.32708333333333334" />
+        <entry key="app/src/main/res/layout/card_item.xml" value="0.32708333333333334" />
         <entry key="app/src/main/res/layout/home.xml" value="0.32708333333333334" />
         <entry key="app/src/main/res/layout/opening.xml" value="0.32708333333333334" />
+        <entry key="app/src/main/res/layout/transaction.xml" value="0.32708333333333334" />
       </map>
     </option>
   </component>

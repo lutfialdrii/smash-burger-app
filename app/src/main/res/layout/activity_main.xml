@@ -540,7 +540,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/menu_12"
             android:layout_marginLeft="25dp"
-            android:background="@drawable/check_out"/>
+            android:background="@drawable/check_out" />
 
 
     </RelativeLayout>
